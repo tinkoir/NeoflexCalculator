@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MathController {
-    @GetMapping("/sum/a={a}/{b}")
+    @GetMapping("/sum/{a}/{b}")
     public Integer sumOfTwo(@PathVariable Integer a, @PathVariable Integer b) {
         return a + b;
     }
